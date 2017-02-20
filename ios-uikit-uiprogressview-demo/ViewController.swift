@@ -8,18 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+final class ViewController: UIViewController {
+    
+    @IBOutlet private weak var progressView: UIProgressView!
+    
+    @IBAction private func increaseProgress(_ sender: UIButton) {
+        guard progressView.progress < 1.0 else {
+            print("すでに100%です")
+            return
+        }
+        // アニメーション付きでプログレスを25%ずつ増やす
+        progressView.setProgress(progressView.progress + 0.25, animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction private func resetProgress(_ sender: UIButton) {
+        // アニメーションなしでプログレスを0に戻す
+        progressView.progress = 0.0
     }
-
 
 }
 
