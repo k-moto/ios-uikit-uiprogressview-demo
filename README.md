@@ -1,6 +1,3 @@
-# ios-uikit-uiprogressview-demo
-iOS UIProgressViewのサンプル(Swift3)
-
 # UIProgressView
 
 ## 概要
