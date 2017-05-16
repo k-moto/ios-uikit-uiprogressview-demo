@@ -10,14 +10,16 @@ UIView
 
 |プロパティ名|説明|サンプル|
 |---|---|---|
-|progress | 進行状況（0.0＝1.0）（storyboardで設定可能） | progressView.progress |
-|progressViewStyle | プログレスバーのスタイル（storyboardで設定可能）| progressView.progressViewStyle |
+|progress | 進行状況（0.0＝1.0）（storyboardで設定可能） | UIProgressView.progress |
+|progressViewStyle | プログレスバーのスタイル（storyboardで設定可能）| UIProgressView.progressViewStyle |
+|trackTintColor | プログレスバーの背景色を設定する | UIProgressView.trackTintColor = UIColor.black |
+|progressTintColor | プログレスバーの色を設定する　| UIProgressView.progressTintColor = UIColor.red |
 
 ## 主要メソッド
 
 |メソッド名|説明|サンプル|
 |---|---|---|
-|setProgress（_：animated :) | 進行状況をセットする。animatedがtrueだとアニメーション付きでプログレスバーが変化する| progressView.setProgress(0.25, animated: true) |
+|setProgress（_：animated :) | 進行状況をセットする。animatedがtrueだとアニメーション付きでプログレスバーが変化する| UIProgressView.setProgress(0.25, animated: true) |
 
 ## Constants
 
