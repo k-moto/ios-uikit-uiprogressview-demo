@@ -12,6 +12,11 @@ final class ViewController: UIViewController {
     
     @IBOutlet private weak var progressView: UIProgressView!
     
+    override func viewDidLoad() {
+        progressView.trackTintColor = UIColor.black
+        progressView.progressTintColor = UIColor.red
+    }
+    
     @IBAction private func increaseProgress(_ sender: UIButton) {
         guard progressView.progress < 1.0 else {
             print("すでに100%です")
